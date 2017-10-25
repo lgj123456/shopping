@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<!-- <script src="lib/html5shiv/html5shiv.min.js"></script>
+<script src="lib/respond/respond.js"></script> -->
+
+</head>
+<body>
+
+<iframe src="common/top.html" name="topFrame" scrolling="no" width="100%" height="100px"
+		noresize="noresize"> </iframe>
+
+
+
+	<div class="content">
+
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#employee"
+				aria-controls="home" role="tab" data-toggle="tab">员工档案</a></li>
+			<li role="presentation"><a href="#client"
+				aria-controls="profile" role="tab" data-toggle="tab">客户档案</a></li>
+			<li role="presentation"><a href="#merchandise"
+				aria-controls="messages" role="tab" data-toggle="tab">商品档案</a></li>
+			<li role="presentation"><a href="#stockorder"
+				aria-controls="settings" role="tab" data-toggle="tab">订货单</a></li>
+			<li role="presentation"><a href="#stockin"
+				aria-controls="settings" role="tab" data-toggle="tab">进货单</a></li>
+
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="employee">
+
+				<iframe src="employee.jsp" width="100%" height="600px"
+					scrolling="auto"> </iframe>
+
+			</div>
+			<div role="tabpanel" class="tab-pane" id="client">
+				<iframe src="client.jsp" width="100%" height="600px"
+					scrolling="auto"> </iframe>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="merchandise">
+				<iframe src="merchandise.jsp" width="100%" height="600px"
+					scrolling="auto"> </iframe>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="stockorder">
+				<iframe src="stockorderAction!preFindStockorder.action" width="100%" height="600px"
+					scrolling="auto"> </iframe>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="stockin">
+				<iframe src="stockinAction!preFindStockin.action" width="100%" height="600px"
+					scrolling="auto"> </iframe>
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
